@@ -1,0 +1,35 @@
+{
+  "name": "es6-lru-cache",
+  "version": "1.0.0",
+  "description": "An LRU cache that uses modern (ES6) JavaScript features",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard | snazzy && mocha --colors --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ianp/es6-lru-cache.git"
+  },
+  "keywords": [
+    "cache",
+    "lru",
+    "map",
+    "node"
+  ],
+  "author": {
+    "name": "Ian Phillips",
+    "email": "ianp@ianp.org",
+    "url": "http://ianp.org/"
+  },
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/ianp/es6-lru-cache/issues"
+  },
+  "homepage": "https://github.com/ianp/es6-lru-cache#readme",
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "should": "^11.1.0",
+    "snazzy": "^4.0.1",
+    "standard": "^8.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+# IDE Stuff
+.settings
+.idea
+.idea_modules
+.project
+.classpath
+*.iml
+
+# Build Stuff
+build
+target
+node_modules
+dist
+
+# Runtime Stuff
+log
+logs
+*.log
+
+# Backup Stuff
+*~
+
+# OS Stuff
+.DS_Store
+.tmp/
+
+# Security Stuff
+*.pem
