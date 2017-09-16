@@ -65,7 +65,7 @@ class Cache {
         this._remove(curr)
       }
     }
-    return count
+    return this.data.size
   }
 
   forEach (callback) {
@@ -82,6 +82,8 @@ class Cache {
       if (entry.expires && entry.expires < Date.now()) {
         this.delete(key)
       } else {
+        this._remove(entry)
+        this._insert(entry)
         return entry.value
       }
     }

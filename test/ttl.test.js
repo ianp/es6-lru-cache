@@ -15,6 +15,14 @@ describe('Time to live expiration', function () {
     }, 20)
   })
 
+  it('should return valid size on expired keys', function (done) {
+    cache.set('a', 23)
+    setTimeout(() => {
+      cache.size.should.equal(0)
+      done()
+    }, 20)
+  })
+
   afterEach(function () {
     cache.clear()
   })
